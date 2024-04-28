@@ -1,10 +1,14 @@
-use std::process::Command;
+use std::{path::Path, process::Command};
 
 fn main() {
     println!("cargo:rerun-if-changed=src/res/font/");
 
     let font = std::fs::read_dir("./src/res/font/").unwrap().next().unwrap().unwrap();
     let font_path = font.path().to_str().unwrap().to_string();
+
+    if !Path::new("./src/res/gen").exists() {
+        std::fs::create_dir("./src/res/gen").unwrap()
+    }
 
     for i in 0..=9 {
         let c = format!("
