@@ -1,0 +1,26 @@
+[package]
+name = "rotate_game_v2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytemuck = { version = "1.14.3", features = [ "derive" ] }
+cgmath = "0.18.0"
+env_logger = "0.11.1"
+log = "0.4.20"
+pollster = "0.3.0"
+rand = "0.8.5"
+rodio = "0.17.3"
+winit = "0.29.10"
+wgpu = "0.19.1"
+cfg-if = "1"
+getrandom = { version = "0.2.12", features = ["js"] }
+colors-transform = "0.2.11"
+image = { version = "0.24.9", default_features = false, features = ["png", "jpeg"] }
+debug-ignore = "1.0.5"
+
+[profile.release]
+strip = true
+lto = true
