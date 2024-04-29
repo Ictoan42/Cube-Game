@@ -1,0 +1,6 @@
+Sound effects:
+  - https://pixabay.com/sound-effects/mouse-click-153941/
+  - https://pixabay.com/sound-effects/90s-game-ui-2-185095/
+
+Font:
+  - https://fonts.google.com/specimen/Comfortaa
