@@ -7,8 +7,8 @@ Look at the shape, pick the correct top-down projection.
 
 Compiling requires ImageMagick. Download a home-grown build from your favourite package manager, or [download](https://imagemagick.org/script/download.php)
 
-`cargo build`, or `cargo build --release` if you want a small executable (link time optimisation is enabled for release builds)
-`cargo run`. also works to skip a step.
+`cargo build`, or `cargo build --release` if you want a small executable (link time optimisation is enabled for release builds).
+`cargo run` also works to skip a step.
 
 ## Asset Credits
 
